@@ -235,7 +235,7 @@ The target location to copy the entire update-site folder is s3://dist.sixtree.c
 
 ## Documentation
 
-The default `mvn install` command incorrectly generates documentation for Mule Modules (a known bug, reference can't be found at the moment). To generate the correct documentation, run the `javadoc` target directly:
+Documentation is generated to the gh-pages.  See https://help.github.com/articles/user-organization-and-project-pages for an explanation of these pages.  The default `mvn install` command incorrectly generates documentation for Mule Modules (a known bug, reference can't be found at the moment). To generate the correct documentation, run the `javadoc` target directly:
 
 ```
 mvn javadoc:javadoc
@@ -247,7 +247,7 @@ This can then be released to Github Pages using the following:
 mvn -Dgithub.oauth2Token=<token> mule-devkit:github-upload-doc
 ```
 
-The resulting documentation can be found at http://sixtree.github.io/mule-module-example
+The resulting documentation can be found on the gh-pages for this project at http://sixtree.github.io/mule-module-example
 
 #### Extra Documentation
 
